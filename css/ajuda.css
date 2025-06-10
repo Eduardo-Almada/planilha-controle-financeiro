@@ -1,0 +1,123 @@
+:root {
+    --cor-fundo: #00030c;
+    --cor-principal: #ffffff;
+    --cor-secundaria: #333;
+    --cor-fundo2: #0056b3;
+    --cinza: #c0c0c0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+}
+
+.container_whatsapp {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-left: 5px solid #0056b3;
+    border-radius: 8px;
+}
+
+.titulo_ajuda {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+header {
+    background-color: var(--cor-fundo2);
+    color: var(--cor-principal);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.home a {
+    font-size: 1.2em;
+}
+
+.home i:hover {
+    background-color: var(--cor-fundo);
+    padding: 0.2em;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #0056b3;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+nav a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    margin-left: 3rem;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da851;
+}
+
+.whatsapp-button i {
+    margin-right: 8px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+            body { padding: 10px; }
+            main { margin: 10px; padding: 15px; }
+            h2 { font-size: 1.8em; }
+            h3 { font-size: 1.4em; }
+            .rodape__logo { width: 50vw;}
+}
+
+@media (max-width: 480px) {
+            body { font-size: 0.95em; }
+            main { border-radius: 0; box-shadow: none; }
+            h2 { font-size: 1.5em; }
+            h3 { font-size: 1.2em; }
+            .rodape__logo { width: 50vw;}
+}

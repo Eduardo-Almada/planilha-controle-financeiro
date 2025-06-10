@@ -1,0 +1,291 @@
+:root {
+    --branco-primario: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --botao-hover: #b1b1b1;
+
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-primario);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ajuda {
+    padding: 1rem 2rem;
+}
+
+.ajuda i {
+    font-size: 1.2;
+}
+
+nav a {
+    color: var(--branco-primario);
+    text-decoration: none;
+    margin-left: 3rem;
+}
+
+nav a:hover {
+    background-color: var(--botao-hover);
+    color: #00030c;
+    padding: 0.5em;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+.principal {
+    background-image: url('../img/background-planilhas.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-primario);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-hover);
+    color: #00030c;
+    transition: 0.5s;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-primario);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-primario);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-primario);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-primario);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-primario);
+    margin-left: 1em;
+}
+
+.lista__link a:hover {
+    background-color: red;
+    transition: 1s;
+    border-radius: 8px;
+    padding: 0.2em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        display: block;
+    }
+    .principal {
+        background-image: none;
+    }
+    .container__titulo {
+        font-size: 2.2em;
+    }
+    .descricao__titulo {
+        font-size: 1.8em;
+    }
+    .descricao__texto {
+        font-size: 1em;
+    }
+}
+
+        /* Para telas menores que 768px (tablets e celulares grandes) */
+@media screen and (max-width: 768px) {
+   .container {
+        display: block;
+        background-color: none;
+   }
+   
+   .principal {
+        background-image: none;
+   }
+
+   .container__imagem {
+        width: 50vw;
+   }
+   
+   .container__caixa {
+        margin: 2em 2em;
+   }
+
+   .secundario {
+        margin: 0;
+        text-align: center;
+   }
+
+   .primaria__imagem {
+        width: 50vw;
+   }
+
+   .secundario__imagem {
+        width: 50vw;
+   }
+
+   .dispositivos__lista {
+        display: block;
+   }
+
+   .rodape__lista {
+        display: block;
+   }
+}
+
+        /* Para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 3%; /* Mais ajustes de padding */
+    }
+
+    .principal {
+        min-height: 60vh;
+        background-image: none;
+    }
+
+    .container__titulo {
+        font-size: 1.5em;
+    }
+
+    .container__imagem {
+        max-width: 200px;
+    }
+
+    .descricao__titulo {
+        font-size: 1.3em;
+    }
+
+    .descricao__texto {
+        font-size: 0.9em;
+    }
+
+    .secundario img {
+        max-width: 90%; /* Imagens quase na largura total */
+    }
+
+    .dispositivos__titulo {
+        font-size: 1.5em;
+    }
+
+    .dispositivos__lista li {
+        flex-basis: 150px; /* Ajusta a base para itens em telas pequenas */
+    }
+
+    .rodape__texto {
+        font-size: 0.8em;
+    }
+
+    .dispositivos__titulo {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .lista__item {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .rodape__logo {
+        width: 50vw;
+    }
+}

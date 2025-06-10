@@ -1,0 +1,121 @@
+:root {
+    --cor-fundo: #00030c;
+    --cor-principal: #ffffff;
+    --cor-hover: #0056b3;
+    --cinza: #c0c0c0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+.home {
+    padding: 1em 2em;
+    text-align: center;
+}
+
+.home a {
+    font-size: 1.2em;
+}
+
+.home a:hover {
+    background-color: var(--cor-hover);
+    padding: 0.5em;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: var(--cor-hover);
+}
+
+nav a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    margin-left: 3rem;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+            body {
+                padding: 10px; /* Reduz o padding geral em telas menores */
+            }
+
+            main {
+                margin: 10px; /* Reduz as margens laterais */
+                padding: 15px; /* Reduz o padding interno */
+            }
+
+            h2 {
+                font-size: 1.8em; /* Ajusta o tamanho da fonte */
+            }
+
+            h3 {
+                font-size: 1.4em; /* Ajusta o tamanho da fonte */
+            }
+
+            ul {
+                margin-left: 15px; /* Reduz o recuo das listas */
+            }
+
+            ul ul {
+                margin-left: 25px; /* Reduz o recuo das listas aninhadas */
+            }
+
+            .rodape__logo {
+                width: 50vw;
+            }
+        }
+
+        /* Para telas muito pequenas (smartphones) */
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.95em; /* Ligeira redução do tamanho da fonte base */
+            }
+
+            main {
+                border-radius: 0; /* Remove borda arredondada em telas muito pequenas para usar toda a largura */
+                box-shadow: none; /* Remove sombra em telas muito pequenas */
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            /* Quebra de linha nos itens de lista para melhor legibilidade */
+            li {
+                word-wrap: break-word; /* Garante que palavras longas quebrem a linha */
+            }
+
+            .rodape__logo {
+                width: 50vw;
+            }
+        }
