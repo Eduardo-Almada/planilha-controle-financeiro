@@ -47,8 +47,10 @@ nav a:hover {
     background-image: url('../img/background-planilhas.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: right center;
     align-items: center;
     text-align: center;
+    padding: 5em 0;
 }
 
 .container__caixa {
@@ -61,11 +63,12 @@ nav a:hover {
 }
 
 .container__imagem {
-    margin: 1em 0 2em 0;
+    margin-bottom: 0;
+    margin: 1em;
 }
 
 .container {
-    height: 100vh;
+    min-height: 70vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -177,9 +180,6 @@ nav a:hover {
     .container {
         display: block;
     }
-    .principal {
-        background-image: none;
-    }
     .container__titulo {
         font-size: 2.2em;
     }
@@ -197,9 +197,9 @@ nav a:hover {
         display: block;
         background-color: none;
    }
-   
+
    .principal {
-        background-image: none;
+    background-image: none;
    }
 
    .container__imagem {
@@ -239,7 +239,8 @@ nav a:hover {
     }
 
     .principal {
-        min-height: 60vh;
+        min-height: auto;
+        padding: 2em 0;
         background-image: none;
     }
 
